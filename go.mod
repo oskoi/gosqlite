@@ -1,5 +1,5 @@
-module github.com/eatonphil/gosqlite
+module github.com/oskoi/gosqlite
 
 go 1.20
 
-replace "github.com/eatonphil/gosqlite" => ./
+replace github.com/oskoi/gosqlite => ./

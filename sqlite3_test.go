@@ -178,7 +178,7 @@ func TestCreate(T *testing.T) {
 	defer t.skipRestIfFailed()
 
 	checkPath := func(c *Conn, name, want string) {
-		if have := c.FileName(name); have != want {
+		if have, _ := strings.CutPrefix(c.FileName(name), "/private"); have != want {
 			t.Fatalf(cl("c.FileName() expected %q; got %q"), want, have)
 		}
 	}

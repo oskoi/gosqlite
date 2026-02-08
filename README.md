@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/eatonphil/gosqlite?status.svg)](https://godoc.org/github.com/eatonphil/gosqlite)
+[![GoDoc](https://godoc.org/github.com/oskoi/gosqlite?status.svg)](https://godoc.org/github.com/oskoi/gosqlite)
 
 # gosqlite
 
@@ -35,7 +35,7 @@ behavior differences from pure SQLite.  This driver does not include a
 ## Getting started
 
 ```go
-import "github.com/eatonphil/gosqlite"
+import "github.com/oskoi/gosqlite"
 ```
 
 ### Acquiring a connection

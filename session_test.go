@@ -26,7 +26,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/eatonphil/gosqlite"
+	"github.com/oskoi/gosqlite"
 )
 
 func initT(t *testing.T, conn *gosqlite.Conn) {

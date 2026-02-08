@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/eatonphil/gosqlite"
+	"github.com/oskoi/gosqlite"
 )
 
 func main() {
