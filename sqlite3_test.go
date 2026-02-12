@@ -11,6 +11,7 @@ import (
 	"io/ioutil"
 	"math"
 	"os"
+	"path/filepath"
 	"reflect"
 	"runtime"
 	"strings"
@@ -183,7 +184,10 @@ func TestCreate(T *testing.T) {
 		}
 	}
 	sql := "CREATE TABLE x(a); INSERT INTO x VALUES(1);"
-	tmp := t.tmpFile()
+	tmp, symLinkErr := filepath.EvalSymlinks(t.tmpFile())
+	if symLinkErr != nil {
+		t.Errorf("symlink evaluation failed: %v", symLinkErr)
+	}
 
 	// File
 	os.Remove(tmp)
